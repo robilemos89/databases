@@ -11,8 +11,6 @@ services:
             MYSQL_ROOT_PASSWORD: secret
         ports:
             - 3306:3306
-        cpus: 0.5
-        mem_limit: 256m
     
     postgres:
         image: postgres:13.3
@@ -23,6 +21,4 @@ services:
             - /var/lib/postgresql/data
         ports:
             - 5432:5432
-        cpus: 0.5
-        mem_limit: 512m
 
